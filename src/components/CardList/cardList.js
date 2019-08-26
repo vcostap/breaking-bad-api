@@ -26,9 +26,9 @@ class CardList extends Component {
       return (
         <div className='conteudo'>
             {
-                this.state.personagens.map((personagem) => (
-                    <Card personagem={personagem} />
-                ))
+              this.state.personagens.map((personagem) => (
+                  <Card personagem={personagem} />
+              ))
             }
         </div>
       );

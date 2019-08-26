@@ -3,17 +3,14 @@ import './card.css';
 
 import estrela from '../../assets/star.png';
 
-/* Fazer um componente aqui mesmo pra retornar a cor da div de acordo com o status
-aí importa dentro de card <Nome da Componente /> */
-
 const Card = ({ personagem }) => {
-    const status = personagem.status;
-    console.log(status);
 
     return (
         <div className="card-div">
             <img src={personagem.img} alt="avatar-personagem"/>
-            <div className="personagem-status">{personagem.status}</div>
+            <div className={`${personagem.status === `Alive` ? `status-alive` : 'status-dead'}`}>
+                {personagem.status}
+            </div>
             <div className="personagem-bio">
                 <h1>{personagem.name}</h1>
                 <div className="personagem-nascimento">
