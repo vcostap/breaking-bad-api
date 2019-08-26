@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .card-div img{
@@ -48,7 +48,7 @@
 .card-div h1{
     height: 30px;
     margin: 5px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .personagem-nascimento{
