@@ -8,7 +8,7 @@ const Card = ({ personagem }) => {
     return (
         <div className="card-div">
             <img src={personagem.img} alt="avatar-personagem"/>
-            <div className={`${personagem.status === `Alive` ? `status-alive` : 'status-dead'}`}>
+            <div className={`${personagem.status === 'Alive' ? 'status-alive' : 'status-dead'}`}>
                 {personagem.status}
             </div>
             <div className="personagem-bio">
@@ -17,7 +17,7 @@ const Card = ({ personagem }) => {
                     <img src={estrela} alt="nascimento-personagem"/>
                     <h4>{personagem.birthday}</h4>
                 </div>
-                <div className="ocupacao">{personagem.occupation[0]} {personagem.occupation[1]}</div> 
+                <div className="ocupacao">{personagem.occupation[0]} | {personagem.occupation[1]}</div> 
             </div> 
         </div>
     );

@@ -41,10 +41,10 @@ class App extends Component {
 
   onChangeSearch(event) {
     const { api } = this.state;
-    const arraySearch = api.filter(function (characters) {
+    const arraySearch = api.filter(function (personagens) {
       const inputSearch = event.target.value.toLowerCase();
       if (inputSearch !== '') {
-        return characters.name.toLowerCase().indexOf(inputSearch) > -1;
+        return personagens.name.toLowerCase().indexOf(inputSearch) > -1;
       } else {
         return api
       }
